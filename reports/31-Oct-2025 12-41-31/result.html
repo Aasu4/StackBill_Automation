@@ -1,0 +1,2268 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>StackBill-Project</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>StackBill-Project</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Oct 31, 2025 12:41:31 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Smoke</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>TC003_Create_Instance</span>
+						<span class='test-time'>Oct 31, 2025 12:41:31 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:41:31 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:42:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 23s+131ms</span>
+</div>
+	<div class='test-desc'>Verify the user can create new instance </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_Create_Instance</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:42:54 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 23s+110ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:42:17 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/352889926.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/352889926.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/352889926.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:42:20 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/225780861.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/225780861.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/225780861.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:42:23 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/529485294.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/529485294.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/529485294.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:42:53 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f7195e3587927aaf7b154be6b34148d, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62027}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62027/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f7195e3587927aaf7b154be6b34148d<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/763097664.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/763097664.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/763097664.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:42:54 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC018_Apps_Page</span>
+						<span class='test-time'>Oct 31, 2025 12:42:54 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:42:54 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:43:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 1s+329ms</span>
+</div>
+	<div class='test-desc'>APPS Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC018_Apps_Page</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:43:55 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 1s+327ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:43:18 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/349557565.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/349557565.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/349557565.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:43:21 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/490465621.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/490465621.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/490465621.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:43:24 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/64530286.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/64530286.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/64530286.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:43:54 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [43a459556a3249a45eaefaa3a3434d91, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65532}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65532/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 43a459556a3249a45eaefaa3a3434d91<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/410652813.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/410652813.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/410652813.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:43:55 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC007_volume_ creation</span>
+						<span class='test-time'>Oct 31, 2025 12:43:55 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:43:55 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:44:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+412ms</span>
+</div>
+	<div class='test-desc'>Create volume </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC007_volume_ creation</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:44:54 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 58s+411ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:44:16 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/199549428.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/199549428.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/199549428.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:44:19 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/641772588.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/641772588.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/641772588.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:44:23 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/649505383.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/649505383.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/649505383.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:44:53 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6c71c9cb8cf666b7ee3c5a4469c62ce, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62554}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62554/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6c71c9cb8cf666b7ee3c5a4469c62ce<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/902338311.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/902338311.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/902338311.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:44:54 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>TC008_volume_snapshot</span>
+						<span class='test-time'>Oct 31, 2025 12:44:54 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:44:54 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:45:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+869ms</span>
+</div>
+	<div class='test-desc'>volume snapshot </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC008_volume_snapshot</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:45:53 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 58s+868ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:45:12 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/435151055.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/435151055.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/435151055.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:45:16 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/286954682.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/286954682.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/286954682.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:45:19 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/14341225.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/14341225.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/14341225.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:45:49 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16ca2f8244a9c9f53fc4a21a59808344, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62691}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62691/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16ca2f8244a9c9f53fc4a21a59808344<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/724500270.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/724500270.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/724500270.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:45:53 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>TC009_VM_snapshot</span>
+						<span class='test-time'>Oct 31, 2025 12:45:53 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:45:53 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:46:55 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 2s+38ms</span>
+</div>
+	<div class='test-desc'>VM snapshot </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC009_VM_snapshot</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:46:55 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 2s+36ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:46:14 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/92670970.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/92670970.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/92670970.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:46:19 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/469104838.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/469104838.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/469104838.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:46:23 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/740770379.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/740770379.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/740770379.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:46:53 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c60befe91e71602b7f27b8f88a49cf28, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65372/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c60befe91e71602b7f27b8f88a49cf28<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/314611207.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/314611207.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/314611207.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:46:55 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>TC010_SSHKey_Creation</span>
+						<span class='test-time'>Oct 31, 2025 12:46:55 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:46:55 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:47:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+200ms</span>
+</div>
+	<div class='test-desc'>SSH Key Creation </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='12'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC010_SSHKey_Creation</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:47:54 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 59s+199ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:47:16 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/57785565.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/57785565.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/57785565.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:47:20 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/630011834.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/630011834.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/630011834.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:47:22 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/241771024.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/241771024.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/241771024.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:47:53 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae3f5238c08208adf9f2acd52cc5bc43, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58964/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae3f5238c08208adf9f2acd52cc5bc43<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/897597370.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/897597370.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/897597370.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:47:54 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>TC011_Affinity_Groups</span>
+						<span class='test-time'>Oct 31, 2025 12:47:54 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:47:54 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:48:48 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+219ms</span>
+</div>
+	<div class='test-desc'>Affinity_Groups </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC011_Affinity_Groups</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:48:48 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 54s+218ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:48:11 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/746526229.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/746526229.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/746526229.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:48:14 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/259846348.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/259846348.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/259846348.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:48:17 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/743585807.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/743585807.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/743585807.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:48:47 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3067254e3fcfb1473da8fb27055da135, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56549/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3067254e3fcfb1473da8fb27055da135<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/484583733.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/484583733.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/484583733.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:48:48 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>TC012_Basic_Network</span>
+						<span class='test-time'>Oct 31, 2025 12:48:48 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:48:48 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:49:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 55s+75ms</span>
+</div>
+	<div class='test-desc'>Basic Network </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='16'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC012_Basic_Network</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:49:43 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 55s+74ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:49:07 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/329431619.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/329431619.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/329431619.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:49:09 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/881360861.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/881360861.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/881360861.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:49:12 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/847418196.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/847418196.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/847418196.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:49:43 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d454c1af9d2ad71ef9a53ccd0960261, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56834}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56834/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d454c1af9d2ad71ef9a53ccd0960261<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/112648579.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/112648579.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/112648579.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:49:43 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>TC013_VPC_Network</span>
+						<span class='test-time'>Oct 31, 2025 12:49:43 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:49:43 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:50:38 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+252ms</span>
+</div>
+	<div class='test-desc'>VPC Network </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='18'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC013_VPC_Network</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:50:38 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 54s+251ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:50:00 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/846328576.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/846328576.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/846328576.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:50:03 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/860135027.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/860135027.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/860135027.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:50:06 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/701913196.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/701913196.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/701913196.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:50:36 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42ed9081c1021a9f7f2a9c74c5582f61, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53220/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 42ed9081c1021a9f7f2a9c74c5582f61<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/224589763.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/224589763.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/224589763.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:50:38 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>TC016_IPManager</span>
+						<span class='test-time'>Oct 31, 2025 12:50:38 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:50:38 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:51:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+296ms</span>
+</div>
+	<div class='test-desc'>IP Manager </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='20'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC016_IPManager</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:51:32 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 54s+295ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:50:55 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/352272593.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/352272593.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/352272593.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:50:58 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/754370295.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/754370295.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/754370295.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:51:01 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/674657799.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/674657799.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/674657799.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:51:31 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [037b8903a4256fbbae145546f2a32c23, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58285/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 037b8903a4256fbbae145546f2a32c23<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/536240010.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/536240010.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/536240010.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:51:32 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>TC017_Load_Balancer</span>
+						<span class='test-time'>Oct 31, 2025 12:51:32 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:51:32 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:52:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 55s+740ms</span>
+</div>
+	<div class='test-desc'>Load Balancer </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='22'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC017_Load_Balancer</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:52:28 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 55s+739ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:51:50 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/381369193.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/381369193.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/381369193.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:51:53 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/517835635.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/517835635.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/517835635.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:51:56 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/271190365.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/271190365.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/271190365.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:52:26 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f105352adccff680431bf97a086e7f84, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53430}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53430/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f105352adccff680431bf97a086e7f84<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/715528437.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/715528437.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/715528437.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:52:28 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>TC019_Addon_Pages</span>
+						<span class='test-time'>Oct 31, 2025 12:52:28 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:52:28 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:53:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 58s+211ms</span>
+</div>
+	<div class='test-desc'>Addon_Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='24'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC019_Addon_Pages</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:53:26 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 58s+211ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:52:47 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/514514756.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/514514756.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/514514756.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:52:50 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/547788520.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/547788520.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/547788520.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:52:53 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/113387597.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/113387597.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/113387597.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:53:24 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [02c504fba354378b44a9a30309c43111, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63785/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 02c504fba354378b44a9a30309c43111<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/302270857.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/302270857.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/302270857.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:53:26 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>TC020_Billing_Pages</span>
+						<span class='test-time'>Oct 31, 2025 12:53:26 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:53:26 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:54:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+199ms</span>
+</div>
+	<div class='test-desc'>Addon_Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='26'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC020_Billing_Pages</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:54:25 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 59s+199ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:53:45 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/789536198.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/789536198.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/789536198.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:53:48 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/226043458.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/226043458.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/226043458.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:53:51 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/255600992.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/255600992.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/255600992.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:54:21 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8a5a2a9f44483199630bcf2f2f9b3749, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50693}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50693/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a5a2a9f44483199630bcf2f2f9b3749<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/130581855.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/130581855.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/130581855.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:54:25 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>TC021_Support_Pages</span>
+						<span class='test-time'>Oct 31, 2025 12:54:25 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:54:25 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:55:21 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 55s+952ms</span>
+</div>
+	<div class='test-desc'>Support_Pages </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='28'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC021_Support_Pages</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:55:21 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 55s+952ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:54:44 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/897775645.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/897775645.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/897775645.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:54:47 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/335832407.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/335832407.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/335832407.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:54:50 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/886543927.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/886543927.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/886543927.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:55:20 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9ea5dd5cfb64c54c0c2c26d1b5f5c526, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60236}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60236/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9ea5dd5cfb64c54c0c2c26d1b5f5c526<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/576836028.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/576836028.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/576836028.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:55:21 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>TC0022_ProfileScreen</span>
+						<span class='test-time'>Oct 31, 2025 12:55:21 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:55:21 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:56:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+390ms</span>
+</div>
+	<div class='test-desc'>Profile_Screen </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='30'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC0022_ProfileScreen</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:56:20 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 59s+389ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:55:40 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/369857473.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/369857473.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/369857473.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:55:42 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/149699565.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/149699565.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/149699565.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:55:45 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/637684515.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/637684515.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/637684515.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:56:15 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b35cbee35eb7f411a6bddb542ca4909b, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52785}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52785/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b35cbee35eb7f411a6bddb542ca4909b<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/345266869.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/345266869.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/345266869.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:56:20 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>TC023_Create_Roles</span>
+						<span class='test-time'>Oct 31, 2025 12:56:20 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:56:20 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:57:25 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 5s+42ms</span>
+</div>
+	<div class='test-desc'>Create Roles </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='32'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC023_Create_Roles</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:57:25 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 5s+38ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:56:46 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/565191525.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/565191525.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/565191525.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:56:50 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/874395534.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/874395534.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/874395534.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:56:54 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/94777992.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/94777992.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/94777992.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:57:25 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [80f0f4b31be07baeaffe8cc1208b1619, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52276/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 80f0f4b31be07baeaffe8cc1208b1619<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/720576052.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/720576052.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/720576052.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:57:25 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>TC024_Create_Subusers</span>
+						<span class='test-time'>Oct 31, 2025 12:57:25 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:57:25 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:58:34 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 8s+929ms</span>
+</div>
+	<div class='test-desc'>Verify Sub User accounts </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='34'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC024_Create_Subusers</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:58:34 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 8s+923ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:57:53 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/744707833.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/744707833.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/744707833.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:57:57 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/807583236.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/807583236.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/807583236.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:58:01 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/588176545.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/588176545.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/588176545.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:58:32 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d7cadd1462cd204c83f25135973b46c, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58818}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58818/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d7cadd1462cd204c83f25135973b46c<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/762336795.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/762336795.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/762336795.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:58:34 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>TC025_QuotaAndEvents</span>
+						<span class='test-time'>Oct 31, 2025 12:58:34 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:58:34 PM</span>
+	<span class='label end-time'>Oct 31, 2025 12:59:29 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 54s+665ms</span>
+</div>
+	<div class='test-desc'>Verify QuotaAndEvents </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='36'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC025_QuotaAndEvents</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 12:59:29 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 54s+664ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:58:51 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/124384338.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/124384338.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/124384338.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:58:54 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/208141283.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/208141283.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/208141283.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:58:57 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/319683226.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/319683226.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/319683226.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>12:59:28 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f05b2c13d446b9ef45ff084aac3b597b, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57428}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57428/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f05b2c13d446b9ef45ff084aac3b597b<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/789509506.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/789509506.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/789509506.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>12:59:29 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>TC026_HelpCneter</span>
+						<span class='test-time'>Oct 31, 2025 12:59:29 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 31, 2025 12:59:29 PM</span>
+	<span class='label end-time'>Oct 31, 2025 01:00:28 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+131ms</span>
+</div>
+	<div class='test-desc'>Verify HelpCenter </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='38'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC026_HelpCneter</h5>
+						<span class="node-time label grey lighten-1 white-text">Oct 31, 2025 01:00:28 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 59s+130ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:59:46 PM</td>
+													<td class='step-details'>Entered Username: qatesting8@assistanz.com<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/778320964.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/778320964.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/778320964.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:59:49 PM</td>
+													<td class='step-details'>Entered Password: StackBill@2025<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/406947202.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/406947202.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/406947202.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>12:59:53 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/768970714.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/768970714.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/768970714.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>1:00:23 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [804eaab40b4188d192d9096577b3c592, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53841}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53841/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 804eaab40b4188d192d9096577b3c592<img data-featherlight='./../../reports/31-Oct-2025 12-41-31/images/405048524.jpg' width='10%' src='./../../reports/31-Oct-2025 12-41-31/images/405048524.jpg' data-src='./../../reports/31-Oct-2025 12-41-31/images/405048524.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>1:00:28 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>19</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>57</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>19</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='20%'>19</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Smoke</span>
+						<span class='category-status right'>
+							<span class='label fail'>19</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 19</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 31, 2025 12:41:31 PM</td>
+										<td class='linked' test-id='1'>TC003_Create_Instance</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:42:54 PM</td>
+										<td class='linked' test-id='3'>TC018_Apps_Page</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:43:55 PM</td>
+										<td class='linked' test-id='5'>TC007_volume_ creation</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:44:54 PM</td>
+										<td class='linked' test-id='7'>TC008_volume_snapshot</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:45:53 PM</td>
+										<td class='linked' test-id='9'>TC009_VM_snapshot</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:46:55 PM</td>
+										<td class='linked' test-id='11'>TC010_SSHKey_Creation</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:47:54 PM</td>
+										<td class='linked' test-id='13'>TC011_Affinity_Groups</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:48:48 PM</td>
+										<td class='linked' test-id='15'>TC012_Basic_Network</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:49:43 PM</td>
+										<td class='linked' test-id='17'>TC013_VPC_Network</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:50:38 PM</td>
+										<td class='linked' test-id='19'>TC016_IPManager</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:51:32 PM</td>
+										<td class='linked' test-id='21'>TC017_Load_Balancer</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:52:28 PM</td>
+										<td class='linked' test-id='23'>TC019_Addon_Pages</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:53:26 PM</td>
+										<td class='linked' test-id='25'>TC020_Billing_Pages</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:54:25 PM</td>
+										<td class='linked' test-id='27'>TC021_Support_Pages</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:55:21 PM</td>
+										<td class='linked' test-id='29'>TC0022_ProfileScreen</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:56:20 PM</td>
+										<td class='linked' test-id='31'>TC023_Create_Roles</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:57:25 PM</td>
+										<td class='linked' test-id='33'>TC024_Create_Subusers</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:58:34 PM</td>
+										<td class='linked' test-id='35'>TC025_QuotaAndEvents</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 31, 2025 12:59:29 PM</td>
+										<td class='linked' test-id='37'>TC026_HelpCneter</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>Aiswarya</span>
+                                <span class='author-status right'>
+                                        <span class='label fail'>11</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    
+                                    <span class='label red lighten-1 white-text'>Failed: 11</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:41:31 PM</td>
+                                                <td class='linked' test-id='1'>TC003_Create_Instance</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:42:54 PM</td>
+                                                <td class='linked' test-id='3'>TC018_Apps_Page</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:49:43 PM</td>
+                                                <td class='linked' test-id='17'>TC013_VPC_Network</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:52:28 PM</td>
+                                                <td class='linked' test-id='23'>TC019_Addon_Pages</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:53:26 PM</td>
+                                                <td class='linked' test-id='25'>TC020_Billing_Pages</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:54:25 PM</td>
+                                                <td class='linked' test-id='27'>TC021_Support_Pages</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:55:21 PM</td>
+                                                <td class='linked' test-id='29'>TC0022_ProfileScreen</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:56:20 PM</td>
+                                                <td class='linked' test-id='31'>TC023_Create_Roles</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:57:25 PM</td>
+                                                <td class='linked' test-id='33'>TC024_Create_Subusers</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:58:34 PM</td>
+                                                <td class='linked' test-id='35'>TC025_QuotaAndEvents</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:59:29 PM</td>
+                                                <td class='linked' test-id='37'>TC026_HelpCneter</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>Aishwarya</span>
+                                <span class='author-status right'>
+                                        <span class='label fail'>8</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    
+                                    <span class='label red lighten-1 white-text'>Failed: 8</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:43:55 PM</td>
+                                                <td class='linked' test-id='5'>TC007_volume_ creation</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:44:54 PM</td>
+                                                <td class='linked' test-id='7'>TC008_volume_snapshot</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:45:53 PM</td>
+                                                <td class='linked' test-id='9'>TC009_VM_snapshot</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:46:55 PM</td>
+                                                <td class='linked' test-id='11'>TC010_SSHKey_Creation</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:47:54 PM</td>
+                                                <td class='linked' test-id='13'>TC011_Affinity_Groups</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:48:48 PM</td>
+                                                <td class='linked' test-id='15'>TC012_Basic_Network</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:50:38 PM</td>
+                                                <td class='linked' test-id='19'>TC016_IPManager</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Oct 31, 2025 12:51:32 PM</td>
+                                                <td class='linked' test-id='21'>TC017_Load_Balancer</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>19</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>95</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Oct 31, 2025 12:41:31 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Oct 31, 2025 01:00:29 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 18m 58s+663ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>Smoke</td>
+							<td>0</td>
+							<td>19</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 0,
+				failParent: 19,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 19,
+				
+				passChild: 57,
+				failChild: 19,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 19,
+				exceptionsChild: 19,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$('#test-view-charts').addClass('hide');
+			});
+		</script>
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

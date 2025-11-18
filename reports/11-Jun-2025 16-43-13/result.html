@@ -1,0 +1,2313 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>StackBill-Project</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+				<li class='waves-effect'><a href='#!' view='author-view' onclick="configureView(3)"><i class='material-icons'>person</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>StackBill-Project</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Jun 11, 2025 04:43:13 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>Smoke</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>TC003_Create_Instance</span>
+						<span class='test-time'>Jun 11, 2025 04:43:14 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:43:14 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:45:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 44s+457ms</span>
+</div>
+	<div class='test-desc'>Verify the user can create new instance </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC003_Create_Instance</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:45:58 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 44s+391ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:44:12 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/495070735.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/495070735.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/495070735.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:44:14 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/140959190.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/140959190.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/140959190.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:44:17 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/261871701.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/261871701.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/261871701.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:44:23 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:44:35 PM</td>
+													<td class='step-details'>Text has been retrieved Choose your Instance Location*</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:44:37 PM</td>
+													<td class='step-details'>Text has been retrieved Choose Your Platform*</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:44:58 PM</td>
+													<td class='step-details'>Text has been retrieved Choose Your Network*</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:44:58 PM</td>
+													<td class='step-details'>Text has been retrieved Setup Cloud Firewall (Security Policy)</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:45:16 PM</td>
+													<td class='step-details'>Text has been retrieved Choose your Instance Name and Number of Instances you want to create</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:45:23 PM</td>
+													<td class='step-details'>Total Estimation<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/697465254.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/697465254.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/697465254.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:45:27 PM</td>
+													<td class='step-details'>Click to Deploy<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/266728421.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/266728421.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/266728421.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:45:58 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TC018_Apps_Page</span>
+						<span class='test-time'>Jun 11, 2025 04:45:58 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:45:58 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:46:42 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+134ms</span>
+</div>
+	<div class='test-desc'>APPS Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC018_Apps_Page</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:46:42 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 44s+133ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:46:13 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/31494828.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/31494828.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/31494828.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:46:15 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/894772917.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/894772917.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/894772917.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:46:17 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/97235180.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/97235180.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/97235180.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:46:30 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:46:42 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TC006_Kunernetes_Page</span>
+						<span class='test-time'>Jun 11, 2025 04:46:42 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:46:42 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:47:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+37ms</span>
+</div>
+	<div class='test-desc'>Verify the kubernetes </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC006_Kunernetes_Page</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:47:27 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 45s+37ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:47:02 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/343126866.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/343126866.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/343126866.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:47:08 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/744080890.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/744080890.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/744080890.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:47:11 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/461972229.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/461972229.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/461972229.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:47:16 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:47:27 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>TC007_volume_ creation</span>
+						<span class='test-time'>Jun 11, 2025 04:47:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:47:27 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:48:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 0s+95ms</span>
+</div>
+	<div class='test-desc'>Create volume </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC007_volume_ creation</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:48:27 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 0s+94ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:47:44 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/167412166.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/167412166.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/167412166.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:47:46 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/585033260.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/585033260.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/585033260.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:47:48 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/582681532.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/582681532.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/582681532.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:47:58 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:48:27 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>TC008_volume_snapshot</span>
+						<span class='test-time'>Jun 11, 2025 04:48:27 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:48:27 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:49:41 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 13s+202ms</span>
+</div>
+	<div class='test-desc'>volume snapshot </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC008_volume_snapshot</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:49:41 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 13s+199ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:48:46 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/44456002.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/44456002.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/44456002.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:48:48 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/252153788.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/252153788.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/252153788.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:48:51 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/41367681.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/41367681.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/41367681.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:49:05 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>4:49:39 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //span[normalize-space()='Add Volume Snapshot']
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[normalize-space()='Add Volume Snapshot']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [99301d16c2a4b37894449c2ae7dc064c, findElement {using=xpath, value=//span[normalize-space()='Add Volume Snapshot']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58435}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58435/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99301d16c2a4b37894449c2ae7dc064c<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/307305819.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/307305819.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/307305819.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:49:41 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>TC009_VM_snapshot</span>
+						<span class='test-time'>Jun 11, 2025 04:49:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:49:41 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:51:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 31s+975ms</span>
+</div>
+	<div class='test-desc'>VM snapshot </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC009_VM_snapshot</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:51:13 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 31s+974ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:50:03 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/734034693.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/734034693.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/734034693.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:50:05 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/431142204.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/431142204.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/431142204.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:50:09 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/636178415.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/636178415.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/636178415.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:50:15 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:13 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>TC010_SSHKey_Creation</span>
+						<span class='test-time'>Jun 11, 2025 04:51:13 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:51:13 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:51:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 37s+961ms</span>
+</div>
+	<div class='test-desc'>SSH Key Creation </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC010_SSHKey_Creation</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:51:51 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 37s+960ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:51:25 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/820362552.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/820362552.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/820362552.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:51:26 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/904415681.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/904415681.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/904415681.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:51:31 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/624242374.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/624242374.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/624242374.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:35 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:47 PM</td>
+													<td class='step-details'>Text has been retrieved ssh-key-555
+qatesting1@assistanz.com
+ssh-key-555
+--</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:47 PM</td>
+													<td class='step-details'>Text has been retrieved Jess Parisian-key
+qatesting1@assistanz.com
+Test
+--</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:47 PM</td>
+													<td class='step-details'>Text has been retrieved ssh-key-746
+qatesting1@assistanz.com
+ssh-key-746
+--</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:47 PM</td>
+													<td class='step-details'>Text has been retrieved ssh-key-530
+qatesting1@assistanz.com
+ssh-key-530
+--</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:47 PM</td>
+													<td class='step-details'>Text has been retrieved Test-key
+qatesting1@assistanz.com
+--
+--</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:51:51 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>TC011_Affinity_Groups</span>
+						<span class='test-time'>Jun 11, 2025 04:51:51 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:51:51 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:52:50 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 59s+498ms</span>
+</div>
+	<div class='test-desc'>Affinity_Groups </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC011_Affinity_Groups</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:52:50 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 59s+496ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:52:08 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/401689256.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/401689256.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/401689256.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:52:10 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/906140714.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/906140714.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/906140714.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:52:12 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/745227416.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/745227416.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/745227416.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:52:34 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:52:50 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>TC012_Basic_Network</span>
+						<span class='test-time'>Jun 11, 2025 04:52:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:52:50 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:53:44 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 53s+749ms</span>
+</div>
+	<div class='test-desc'>Basic Network </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC012_Basic_Network</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:53:44 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 53s+749ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:53:05 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/534665353.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/534665353.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/534665353.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:53:07 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/126869399.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/126869399.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/126869399.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:53:10 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/238715712.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/238715712.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/238715712.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:53:25 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:53:44 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>TC013_VPC_Network</span>
+						<span class='test-time'>Jun 11, 2025 04:53:44 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:53:44 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:54:20 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+814ms</span>
+</div>
+	<div class='test-desc'>VPC Network </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC013_VPC_Network</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:54:20 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 35s+814ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:53:59 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/850923422.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/850923422.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/850923422.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:54:02 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/346947813.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/346947813.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/346947813.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:54:05 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/192061772.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/192061772.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/192061772.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:54:10 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:54:20 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>TC016_IPManager</span>
+						<span class='test-time'>Jun 11, 2025 04:54:20 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:54:20 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:55:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 4s+7ms</span>
+</div>
+	<div class='test-desc'>IP Manager </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC016_IPManager</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:55:24 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 4s+7ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:54:34 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/434798165.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/434798165.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/434798165.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:54:37 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/681634681.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/681634681.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/681634681.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:54:39 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/367251373.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/367251373.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/367251373.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:54:54 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:55:24 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>TC017_Load_Balancer</span>
+						<span class='test-time'>Jun 11, 2025 04:55:24 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:55:24 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:56:36 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 1m 12s+249ms</span>
+</div>
+	<div class='test-desc'>Load Balancer </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aishwarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC017_Load_Balancer</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:56:36 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 1m 12s+248ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:55:43 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/185302175.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/185302175.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/185302175.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:55:50 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/613295986.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/613295986.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/613295986.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:55:53 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/414698958.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/414698958.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/414698958.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:55:58 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:56:36 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>TC019_Addon_Pages</span>
+						<span class='test-time'>Jun 11, 2025 04:56:36 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:56:36 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:57:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 43s+115ms</span>
+</div>
+	<div class='test-desc'>Addon_Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC019_Addon_Pages</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:57:19 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 43s+115ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:56:52 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/817801051.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/817801051.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/817801051.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:56:54 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/699185229.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/699185229.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/699185229.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:56:57 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/11739069.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/11739069.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/11739069.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:15 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:19 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>TC020_Billing_Pages</span>
+						<span class='test-time'>Jun 11, 2025 04:57:19 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:57:19 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:57:59 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 40s+148ms</span>
+</div>
+	<div class='test-desc'>Addon_Page </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC020_Billing_Pages</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:57:59 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 40s+143ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:57:37 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/235380935.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/235380935.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/235380935.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:57:40 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/874723259.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/874723259.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/874723259.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:57:43 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/288480246.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/288480246.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/288480246.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:55 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:59 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>TC021_Support_Pages</span>
+						<span class='test-time'>Jun 11, 2025 04:57:59 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:57:59 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:58:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+230ms</span>
+</div>
+	<div class='test-desc'>Support_Pages </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC021_Support_Pages</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:58:32 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 33s+230ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:14 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/101220246.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/101220246.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/101220246.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:15 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/573206992.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/573206992.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/573206992.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:17 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/469111387.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/469111387.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/469111387.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:23 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:32 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>TC0022_ProfileScreen</span>
+						<span class='test-time'>Jun 11, 2025 04:58:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:58:32 PM</span>
+	<span class='label end-time'>Jun 11, 2025 04:59:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+546ms</span>
+</div>
+	<div class='test-desc'>Profile_Screen </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC0022_ProfileScreen</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 04:59:18 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 45s+543ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:50 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/728172831.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/728172831.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/728172831.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:54 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/836134759.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/836134759.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/836134759.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:56 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/76373947.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/76373947.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/76373947.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:03 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:17 PM</td>
+													<td class='step-details'>Confirm Save Changes<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/454836982.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/454836982.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/454836982.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:18 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>TC023_Create_Roles</span>
+						<span class='test-time'>Jun 11, 2025 04:59:18 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 04:59:18 PM</span>
+	<span class='label end-time'>Jun 11, 2025 05:00:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 49s+934ms</span>
+</div>
+	<div class='test-desc'>Create Roles </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='34'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC023_Create_Roles</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 05:00:08 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 49s+932ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:32 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/349205939.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/349205939.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/349205939.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:34 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/272754481.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/272754481.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/272754481.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:37 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/330850695.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/330850695.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/330850695.jpg'></td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>5:00:07 PM</td>
+													<td class='step-details'>The Element with locator:XPATH Not Found with value: //h4[contains(@class, 'mb-0')]
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[contains(@class, 'mb-0')]"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [99fae12dcc42f064caf57e3a97f1c319, findElement {using=xpath, value=//h4[contains(@class, 'mb-0')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59235/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99fae12dcc42f064caf57e3a97f1c319<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/783441909.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/783441909.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/783441909.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:08 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>TC024_Create_Subusers</span>
+						<span class='test-time'>Jun 11, 2025 05:00:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 05:00:08 PM</span>
+	<span class='label end-time'>Jun 11, 2025 05:00:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+617ms</span>
+</div>
+	<div class='test-desc'>Verify Sub User accounts </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC024_Create_Subusers</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 05:00:53 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 45s+612ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:23 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/644916439.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/644916439.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/644916439.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:25 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/491552130.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/491552130.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/491552130.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:27 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/773077501.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/773077501.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/773077501.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:41 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:53 PM</td>
+													<td class='step-details'>Add user Successful<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/616388040.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/616388040.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/616388040.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:53 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>TC025_QuotaAndEvents</span>
+						<span class='test-time'>Jun 11, 2025 05:00:53 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 05:00:53 PM</span>
+	<span class='label end-time'>Jun 11, 2025 05:12:30 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 11m 37s+48ms</span>
+</div>
+	<div class='test-desc'>Verify QuotaAndEvents </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='38'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC025_QuotaAndEvents</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 05:12:30 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 11m 37s+48ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:08 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/35011276.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/35011276.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/35011276.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:10 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/62194445.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/62194445.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/62194445.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:12 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/215577376.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/215577376.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/215577376.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:30 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>5:12:27 PM</td>
+													<td class='step-details'>The Element [[ChromeDriver: chrome on windows (ac32409960be4fc3cc8daf125f766d70)] -> xpath: //div//span[normalize-space()='My Activity']] could not be clicked 
+element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac32409960be4fc3cc8daf125f766d70, clickElement {id=f.5EDEFAFECB2777154A92A8C604C375E0.d.A32606FA0721565A700510DB549C2571.e.90}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\Assistanz\AppData\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59373}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59373/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac32409960be4fc3cc8daf125f766d70)] -> xpath: //div//span[normalize-space()='My Activity']]
+Session ID: ac32409960be4fc3cc8daf125f766d70<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/748007152.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/748007152.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/748007152.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:30 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>TC026_HelpCneter</span>
+						<span class='test-time'>Jun 11, 2025 05:12:31 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 11, 2025 05:12:31 PM</span>
+	<span class='label end-time'>Jun 11, 2025 05:13:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 44s+659ms</span>
+</div>
+	<div class='test-desc'>Verify HelpCenter </div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>Smoke</span>
+			</div>
+			<div class='author-list'>
+				<span class='author label white-text'>Aiswarya</span>
+			</div>
+	</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>TC026_HelpCneter</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 11, 2025 05:13:15 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 44s+659ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:12:56 PM</td>
+													<td class='step-details'>Entered Username: qatesting1@assistanz.com<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/445899412.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/445899412.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/445899412.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:12:59 PM</td>
+													<td class='step-details'>Entered Password: Test@123abc@123<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/597252302.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/597252302.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/597252302.jpg'></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:13:02 PM</td>
+													<td class='step-details'>Login button clicked successfull<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/403329144.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/403329144.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/403329144.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:13:08 PM</td>
+													<td class='step-details'>Text has been retrieved Welcome Back, QA-Testing!</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:13:12 PM</td>
+													<td class='step-details'>Click to View Help Center<img data-featherlight='./../../reports/11-Jun-2025 16-43-13/images/908685475.jpg' width='10%' src='./../../reports/11-Jun-2025 16-43-13/images/908685475.jpg' data-src='./../../reports/11-Jun-2025 16-43-13/images/908685475.jpg'></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:13:15 PM</td>
+													<td class='step-details'>Browser is closed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='85%'><span class='strong'>17</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='15%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='55.556%'><span class='strong'>65</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='2.564%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='41.88%'>49</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>Smoke</span>
+						<span class='category-status right'>
+							<span class='label pass'>17</span>
+							<span class='label fail'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 17</span>
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jun 11, 2025 04:43:14 PM</td>
+										<td class='linked' test-id='1'>TC003_Create_Instance</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:45:58 PM</td>
+										<td class='linked' test-id='3'>TC018_Apps_Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:46:42 PM</td>
+										<td class='linked' test-id='5'>TC006_Kunernetes_Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:47:27 PM</td>
+										<td class='linked' test-id='7'>TC007_volume_ creation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:48:27 PM</td>
+										<td class='linked' test-id='9'>TC008_volume_snapshot</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:49:41 PM</td>
+										<td class='linked' test-id='11'>TC009_VM_snapshot</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:51:13 PM</td>
+										<td class='linked' test-id='13'>TC010_SSHKey_Creation</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:51:51 PM</td>
+										<td class='linked' test-id='15'>TC011_Affinity_Groups</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:52:50 PM</td>
+										<td class='linked' test-id='17'>TC012_Basic_Network</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:53:44 PM</td>
+										<td class='linked' test-id='19'>TC013_VPC_Network</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:54:20 PM</td>
+										<td class='linked' test-id='21'>TC016_IPManager</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:55:24 PM</td>
+										<td class='linked' test-id='23'>TC017_Load_Balancer</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:56:36 PM</td>
+										<td class='linked' test-id='25'>TC019_Addon_Pages</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:57:19 PM</td>
+										<td class='linked' test-id='27'>TC020_Billing_Pages</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:57:59 PM</td>
+										<td class='linked' test-id='29'>TC021_Support_Pages</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:58:32 PM</td>
+										<td class='linked' test-id='31'>TC0022_ProfileScreen</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 04:59:18 PM</td>
+										<td class='linked' test-id='33'>TC023_Create_Roles</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 05:00:08 PM</td>
+										<td class='linked' test-id='35'>TC024_Create_Subusers</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 05:00:53 PM</td>
+										<td class='linked' test-id='37'>TC025_QuotaAndEvents</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 11, 2025 05:12:31 PM</td>
+										<td class='linked' test-id='39'>TC026_HelpCneter</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='author-view' class='view hide'>
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Authors' title='Search Authors'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Authors...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Authors</h5>
+                <ul id='author-collection' class='author-collection'>
+
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>Aiswarya</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>10</span>
+                                        <span class='label fail'>2</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 10</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 2</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:43:14 PM</td>
+                                                <td class='linked' test-id='1'>TC003_Create_Instance</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:45:58 PM</td>
+                                                <td class='linked' test-id='3'>TC018_Apps_Page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:46:42 PM</td>
+                                                <td class='linked' test-id='5'>TC006_Kunernetes_Page</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:53:44 PM</td>
+                                                <td class='linked' test-id='19'>TC013_VPC_Network</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:56:36 PM</td>
+                                                <td class='linked' test-id='25'>TC019_Addon_Pages</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:57:19 PM</td>
+                                                <td class='linked' test-id='27'>TC020_Billing_Pages</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:57:59 PM</td>
+                                                <td class='linked' test-id='29'>TC021_Support_Pages</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:58:32 PM</td>
+                                                <td class='linked' test-id='31'>TC0022_ProfileScreen</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:59:18 PM</td>
+                                                <td class='linked' test-id='33'>TC023_Create_Roles</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 05:00:08 PM</td>
+                                                <td class='linked' test-id='35'>TC024_Create_Subusers</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 05:00:53 PM</td>
+                                                <td class='linked' test-id='37'>TC025_QuotaAndEvents</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 05:12:31 PM</td>
+                                                <td class='linked' test-id='39'>TC026_HelpCneter</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='author displayed active'>
+                            <div class='author-heading'>
+                                <span class='author-name'>Aishwarya</span>
+                                <span class='author-status right'>
+                                        <span class='label pass'>7</span>
+                                        <span class='label fail'>1</span>
+						        </span>
+                            </div>
+                            <div class='author-content hide'>
+                                <div class='author-status-counts'>
+                                    <span class='label green accent-4 white-text'>Passed: 7</span>
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
+                                    
+                                </div>
+
+                                <div class='author-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:47:27 PM</td>
+                                                <td class='linked' test-id='7'>TC007_volume_ creation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:48:27 PM</td>
+                                                <td class='linked' test-id='9'>TC008_volume_snapshot</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:49:41 PM</td>
+                                                <td class='linked' test-id='11'>TC009_VM_snapshot</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:51:13 PM</td>
+                                                <td class='linked' test-id='13'>TC010_SSHKey_Creation</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:51:51 PM</td>
+                                                <td class='linked' test-id='15'>TC011_Affinity_Groups</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:52:50 PM</td>
+                                                <td class='linked' test-id='17'>TC012_Basic_Network</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:54:20 PM</td>
+                                                <td class='linked' test-id='21'>TC016_IPManager</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 11, 2025 04:55:24 PM</td>
+                                                <td class='linked' test-id='23'>TC017_Load_Balancer</td>
+                                                <td><span class='test-status pass'>pass</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='author-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>20</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>117</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jun 11, 2025 04:43:13 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jun 11, 2025 05:13:15 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 30m 2s+186ms</div>
+				</div>
+			</div>
+			<div class='col s6'>
+				<div class='card-panel dashboard-categories'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+							<th>Passed %</th>
+						</tr>
+						<tr>
+							<td>Smoke</td>
+							<td>17</td>
+							<td>3</td>
+							<td>0</td>
+							<td>
+									85%
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 17,
+				failParent: 3,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 3,
+				
+				passChild: 65,
+				failChild: 3,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 49,
+				exceptionsChild: 3,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		<script type='text/javascript'>
+			$(document).ready(function() {
+				$('#test-view-charts').addClass('hide');
+			});
+		</script>
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>

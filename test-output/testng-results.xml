@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="36" total="55" passed="15" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-31T13:13:20 IST" name="Suite" finished-at="2025-10-31T13:43:40 IST" duration-ms="1819713">
+    <groups>
+    </groups>
+    <test started-at="2025-10-31T13:13:20 IST" name="QA-Testing" finished-at="2025-10-31T13:43:40 IST" duration-ms="1819713">
+      <class name="testCases.TC003CreateInstance">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:13:20 IST" name="startReport" finished-at="2025-10-31T13:13:20 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:13:20 IST" name="startTestCase" finished-at="2025-10-31T13:13:20 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:13:20 IST" name="preCondition" finished-at="2025-10-31T13:13:31 IST" duration-ms="10414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateNewInstance()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:13:31 IST" name="CreateNewInstance" finished-at="2025-10-31T13:14:08 IST" duration-ms="36746" status="FAIL">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at com.wolfapp.OSimages.AllOsImages.listOsImages(AllOsImages.java:23)
+at testCases.TC003CreateInstance.CreateNewInstance(TC003CreateInstance.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewInstance -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:14:08 IST" name="postCondition" finished-at="2025-10-31T13:14:10 IST" duration-ms="2319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="endResult()[pri:0, instance:testCases.TC003CreateInstance@79d8407f]" started-at="2025-10-31T13:43:40 IST" name="endResult" finished-at="2025-10-31T13:43:41 IST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endResult -->
+      </class> <!-- testCases.TC003CreateInstance -->
+      <class name="testCases.TC019AddonPages">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC019AddonPages@385e9564]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC019AddonPages@385e9564]" started-at="2025-10-31T13:25:45 IST" name="startTestCase" finished-at="2025-10-31T13:25:45 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC019AddonPages@385e9564]" started-at="2025-10-31T13:25:45 IST" name="preCondition" finished-at="2025-10-31T13:25:58 IST" duration-ms="12405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateAddons()[pri:0, instance:testCases.TC019AddonPages@385e9564]" started-at="2025-10-31T13:25:58 IST" name="CreateAddons" finished-at="2025-10-31T13:26:26 IST" duration-ms="28381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAddons -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC019AddonPages@385e9564]" started-at="2025-10-31T13:26:26 IST" name="postCondition" finished-at="2025-10-31T13:26:28 IST" duration-ms="1253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC019AddonPages -->
+      <class name="testCases.TC026HelpCenter">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC026HelpCenter@1e178745]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC026HelpCenter@1e178745]" started-at="2025-10-31T13:43:04 IST" name="startTestCase" finished-at="2025-10-31T13:43:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC026HelpCenter@1e178745]" started-at="2025-10-31T13:43:04 IST" name="preCondition" finished-at="2025-10-31T13:43:18 IST" duration-ms="13806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="HelpCenter()[pri:0, instance:testCases.TC026HelpCenter@1e178745]" started-at="2025-10-31T13:43:18 IST" name="HelpCenter" finished-at="2025-10-31T13:43:37 IST" duration-ms="19360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HelpCenter -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC026HelpCenter@1e178745]" started-at="2025-10-31T13:43:37 IST" name="postCondition" finished-at="2025-10-31T13:43:40 IST" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC026HelpCenter -->
+      <class name="testCases.TC018AppsPage$TC013VPCNetwork">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC018AppsPage$TC013VPCNetwork@291caca8]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC018AppsPage$TC013VPCNetwork@291caca8]" started-at="2025-10-31T13:14:10 IST" name="startTestCase" finished-at="2025-10-31T13:14:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC018AppsPage$TC013VPCNetwork@291caca8]" started-at="2025-10-31T13:14:10 IST" name="preCondition" finished-at="2025-10-31T13:14:22 IST" duration-ms="12164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateApps()[pri:0, instance:testCases.TC018AppsPage$TC013VPCNetwork@291caca8]" started-at="2025-10-31T13:14:22 IST" name="CreateApps" finished-at="2025-10-31T13:14:55 IST" duration-ms="32706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateApps -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC018AppsPage$TC013VPCNetwork@291caca8]" started-at="2025-10-31T13:14:55 IST" name="postCondition" finished-at="2025-10-31T13:14:58 IST" duration-ms="3148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC018AppsPage$TC013VPCNetwork -->
+      <class name="testCases.TC024CreateSubUsers">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC024CreateSubUsers@7ee8290b]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC024CreateSubUsers@7ee8290b]" started-at="2025-10-31T13:30:10 IST" name="startTestCase" finished-at="2025-10-31T13:30:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC024CreateSubUsers@7ee8290b]" started-at="2025-10-31T13:30:10 IST" name="preCondition" finished-at="2025-10-31T13:30:25 IST" duration-ms="14787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateSubUsers()[pri:0, instance:testCases.TC024CreateSubUsers@7ee8290b]" started-at="2025-10-31T13:30:25 IST" name="CreateSubUsers" finished-at="2025-10-31T13:31:18 IST" duration-ms="52551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSubUsers -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC024CreateSubUsers@7ee8290b]" started-at="2025-10-31T13:31:18 IST" name="postCondition" finished-at="2025-10-31T13:31:23 IST" duration-ms="5306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC024CreateSubUsers -->
+      <class name="testCases.TC013VPCNetwork">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC013VPCNetwork@6a2f6f80]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC013VPCNetwork@6a2f6f80]" started-at="2025-10-31T13:22:06 IST" name="startTestCase" finished-at="2025-10-31T13:22:06 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC013VPCNetwork@6a2f6f80]" started-at="2025-10-31T13:22:06 IST" name="preCondition" finished-at="2025-10-31T13:22:15 IST" duration-ms="8932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateVPCNetwork()[pri:0, instance:testCases.TC013VPCNetwork@6a2f6f80]" started-at="2025-10-31T13:22:15 IST" name="CreateVPCNetwork" finished-at="2025-10-31T13:23:12 IST" duration-ms="57638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateVPCNetwork -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC013VPCNetwork@6a2f6f80]" started-at="2025-10-31T13:23:12 IST" name="postCondition" finished-at="2025-10-31T13:23:20 IST" duration-ms="7391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC013VPCNetwork -->
+      <class name="testCases.TC011AffinityGroups">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC011AffinityGroups@707194ba]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC011AffinityGroups@707194ba]" started-at="2025-10-31T13:20:14 IST" name="startTestCase" finished-at="2025-10-31T13:20:14 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC011AffinityGroups@707194ba]" started-at="2025-10-31T13:20:14 IST" name="preCondition" finished-at="2025-10-31T13:20:28 IST" duration-ms="13447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="AffinityGroups()[pri:0, instance:testCases.TC011AffinityGroups@707194ba]" started-at="2025-10-31T13:20:28 IST" name="AffinityGroups" finished-at="2025-10-31T13:20:58 IST" duration-ms="30520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AffinityGroups -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC011AffinityGroups@707194ba]" started-at="2025-10-31T13:20:58 IST" name="postCondition" finished-at="2025-10-31T13:21:00 IST" duration-ms="2139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC011AffinityGroups -->
+      <class name="testCases.TC021SupportPages">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC021SupportPages@8c3b9d]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC021SupportPages@8c3b9d]" started-at="2025-10-31T13:27:14 IST" name="startTestCase" finished-at="2025-10-31T13:27:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC021SupportPages@8c3b9d]" started-at="2025-10-31T13:27:14 IST" name="preCondition" finished-at="2025-10-31T13:27:28 IST" duration-ms="13183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="supportPages()[pri:0, instance:testCases.TC021SupportPages@8c3b9d]" started-at="2025-10-31T13:27:28 IST" name="supportPages" finished-at="2025-10-31T13:27:58 IST" duration-ms="30452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- supportPages -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC021SupportPages@8c3b9d]" started-at="2025-10-31T13:27:58 IST" name="postCondition" finished-at="2025-10-31T13:28:09 IST" duration-ms="10937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC021SupportPages -->
+      <class name="testCases.TC017LoadBalancer">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC017LoadBalancer@399c4be1]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC017LoadBalancer@399c4be1]" started-at="2025-10-31T13:24:20 IST" name="startTestCase" finished-at="2025-10-31T13:24:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC017LoadBalancer@399c4be1]" started-at="2025-10-31T13:24:20 IST" name="preCondition" finished-at="2025-10-31T13:24:34 IST" duration-ms="13959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateLoadBalancer()[pri:0, instance:testCases.TC017LoadBalancer@399c4be1]" started-at="2025-10-31T13:24:34 IST" name="CreateLoadBalancer" finished-at="2025-10-31T13:25:45 IST" duration-ms="70931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateLoadBalancer -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC017LoadBalancer@399c4be1]" started-at="2025-10-31T13:25:45 IST" name="postCondition" finished-at="2025-10-31T13:25:45 IST" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC017LoadBalancer -->
+      <class name="testCases.TC007VolumeCreation">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC007VolumeCreation@5aebe890]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC007VolumeCreation@5aebe890]" started-at="2025-10-31T13:14:58 IST" name="startTestCase" finished-at="2025-10-31T13:14:58 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC007VolumeCreation@5aebe890]" started-at="2025-10-31T13:14:58 IST" name="preCondition" finished-at="2025-10-31T13:15:14 IST" duration-ms="15638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="VolumePage()[pri:0, instance:testCases.TC007VolumeCreation@5aebe890]" started-at="2025-10-31T13:15:14 IST" name="VolumePage" finished-at="2025-10-31T13:15:57 IST" duration-ms="42804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VolumePage -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC007VolumeCreation@5aebe890]" started-at="2025-10-31T13:15:57 IST" name="postCondition" finished-at="2025-10-31T13:16:06 IST" duration-ms="9972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC007VolumeCreation -->
+      <class name="testCases.TC020BillingPages">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC020BillingPages@5b94b04d]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC020BillingPages@5b94b04d]" started-at="2025-10-31T13:26:28 IST" name="startTestCase" finished-at="2025-10-31T13:26:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC020BillingPages@5b94b04d]" started-at="2025-10-31T13:26:28 IST" name="preCondition" finished-at="2025-10-31T13:26:36 IST" duration-ms="8145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="BillingPages()[pri:0, instance:testCases.TC020BillingPages@5b94b04d]" started-at="2025-10-31T13:26:36 IST" name="BillingPages" finished-at="2025-10-31T13:27:12 IST" duration-ms="36052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BillingPages -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC020BillingPages@5b94b04d]" started-at="2025-10-31T13:27:12 IST" name="postCondition" finished-at="2025-10-31T13:27:14 IST" duration-ms="2649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC020BillingPages -->
+      <class name="testCases.TC008VolumeSnapShot">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC008VolumeSnapShot@65d09a04]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC008VolumeSnapShot@65d09a04]" started-at="2025-10-31T13:16:06 IST" name="startTestCase" finished-at="2025-10-31T13:16:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC008VolumeSnapShot@65d09a04]" started-at="2025-10-31T13:16:06 IST" name="preCondition" finished-at="2025-10-31T13:16:22 IST" duration-ms="15685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="VolumeSnapshotPage()[pri:0, instance:testCases.TC008VolumeSnapShot@65d09a04]" started-at="2025-10-31T13:16:22 IST" name="VolumeSnapshotPage" finished-at="2025-10-31T13:17:26 IST" duration-ms="63781" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[See the reporter for details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: See the reporter for details.
+at com.framework.utils.ReportManager.reportStep(ReportManager.java:92)
+at com.framework.utils.ReportManager.reportStep(ReportManager.java:107)
+at com.framework.base.SeleniumWrapper.selectDropDownUsingValue(SeleniumWrapper.java:468)
+at com.wolfapp.Computepages.VolumeSnapShotPage.createVolumeSnapshot(VolumeSnapShotPage.java:10)
+at testCases.TC008VolumeSnapShot.VolumeSnapshotPage(TC008VolumeSnapShot.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VolumeSnapshotPage -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC008VolumeSnapShot@65d09a04]" started-at="2025-10-31T13:17:26 IST" name="postCondition" finished-at="2025-10-31T13:17:36 IST" duration-ms="10321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC008VolumeSnapShot -->
+      <class name="testCases.TC022ProfileScreen">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC022ProfileScreen@4c39bec8]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC022ProfileScreen@4c39bec8]" started-at="2025-10-31T13:28:09 IST" name="startTestCase" finished-at="2025-10-31T13:28:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC022ProfileScreen@4c39bec8]" started-at="2025-10-31T13:28:09 IST" name="preCondition" finished-at="2025-10-31T13:28:22 IST" duration-ms="13168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="Profilescreen()[pri:0, instance:testCases.TC022ProfileScreen@4c39bec8]" started-at="2025-10-31T13:28:22 IST" name="Profilescreen" finished-at="2025-10-31T13:29:04 IST" duration-ms="42092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Profilescreen -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC022ProfileScreen@4c39bec8]" started-at="2025-10-31T13:29:04 IST" name="postCondition" finished-at="2025-10-31T13:29:06 IST" duration-ms="1556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC022ProfileScreen -->
+      <class name="testCases.TC009VMSanpShot">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC009VMSanpShot@33c911a1]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC009VMSanpShot@33c911a1]" started-at="2025-10-31T13:17:36 IST" name="startTestCase" finished-at="2025-10-31T13:17:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC009VMSanpShot@33c911a1]" started-at="2025-10-31T13:17:36 IST" name="preCondition" finished-at="2025-10-31T13:17:50 IST" duration-ms="13642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="VMSnapshotPage()[pri:0, instance:testCases.TC009VMSanpShot@33c911a1]" started-at="2025-10-31T13:17:50 IST" name="VMSnapshotPage" finished-at="2025-10-31T13:19:00 IST" duration-ms="69882" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[See the reporter for details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: See the reporter for details.
+at com.framework.utils.ReportManager.reportStep(ReportManager.java:92)
+at com.framework.utils.ReportManager.reportStep(ReportManager.java:107)
+at com.framework.base.SeleniumWrapper.selectDropDownUsingValue(SeleniumWrapper.java:468)
+at com.wolfapp.Computepages.VmSnapshotPage.createVmSnapshot(VmSnapshotPage.java:17)
+at testCases.TC009VMSanpShot.VMSnapshotPage(TC009VMSanpShot.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VMSnapshotPage -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC009VMSanpShot@33c911a1]" started-at="2025-10-31T13:19:00 IST" name="postCondition" finished-at="2025-10-31T13:19:03 IST" duration-ms="3529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC009VMSanpShot -->
+      <class name="testCases.TC012BasicNetworks">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC012BasicNetworks@1190200a]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC012BasicNetworks@1190200a]" started-at="2025-10-31T13:21:00 IST" name="startTestCase" finished-at="2025-10-31T13:21:00 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC012BasicNetworks@1190200a]" started-at="2025-10-31T13:21:00 IST" name="preCondition" finished-at="2025-10-31T13:21:10 IST" duration-ms="9817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="BasicNetwork()[pri:0, instance:testCases.TC012BasicNetworks@1190200a]" started-at="2025-10-31T13:21:10 IST" name="BasicNetwork" finished-at="2025-10-31T13:22:01 IST" duration-ms="50746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BasicNetwork -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC012BasicNetworks@1190200a]" started-at="2025-10-31T13:22:01 IST" name="postCondition" finished-at="2025-10-31T13:22:06 IST" duration-ms="4693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC012BasicNetworks -->
+      <class name="testCases.TC016IpManager">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC016IpManager@45b4c3a9]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC016IpManager@45b4c3a9]" started-at="2025-10-31T13:23:20 IST" name="startTestCase" finished-at="2025-10-31T13:23:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC016IpManager@45b4c3a9]" started-at="2025-10-31T13:23:20 IST" name="preCondition" finished-at="2025-10-31T13:23:28 IST" duration-ms="8805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateIPManager()[pri:0, instance:testCases.TC016IpManager@45b4c3a9]" started-at="2025-10-31T13:23:28 IST" name="CreateIPManager" finished-at="2025-10-31T13:24:15 IST" duration-ms="46897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateIPManager -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC016IpManager@45b4c3a9]" started-at="2025-10-31T13:24:15 IST" name="postCondition" finished-at="2025-10-31T13:24:20 IST" duration-ms="4322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC016IpManager -->
+      <class name="testCases.TC025QuotaAndEvents">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC025QuotaAndEvents@1f59a598]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC025QuotaAndEvents@1f59a598]" started-at="2025-10-31T13:31:23 IST" name="startTestCase" finished-at="2025-10-31T13:31:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC025QuotaAndEvents@1f59a598]" started-at="2025-10-31T13:31:23 IST" name="preCondition" finished-at="2025-10-31T13:31:31 IST" duration-ms="8546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="QuotaAndEvents()[pri:0, instance:testCases.TC025QuotaAndEvents@1f59a598]" started-at="2025-10-31T13:31:31 IST" name="QuotaAndEvents" finished-at="2025-10-31T13:43:00 IST" duration-ms="688773" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[See the reporter for details.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: See the reporter for details.
+at com.framework.utils.ReportManager.reportStep(ReportManager.java:92)
+at com.framework.utils.ReportManager.reportStep(ReportManager.java:107)
+at com.framework.base.SeleniumWrapper.click(SeleniumWrapper.java:239)
+at com.wolfapp.company.CompanyPages.clickMyActivity(CompanyPages.java:35)
+at testCases.TC025QuotaAndEvents.QuotaAndEvents(TC025QuotaAndEvents.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuotaAndEvents -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC025QuotaAndEvents@1f59a598]" started-at="2025-10-31T13:43:00 IST" name="postCondition" finished-at="2025-10-31T13:43:04 IST" duration-ms="3696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC025QuotaAndEvents -->
+      <class name="testCases.TC010SSHKeyCreation">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC010SSHKeyCreation@75db5df9]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC010SSHKeyCreation@75db5df9]" started-at="2025-10-31T13:19:03 IST" name="startTestCase" finished-at="2025-10-31T13:19:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC010SSHKeyCreation@75db5df9]" started-at="2025-10-31T13:19:03 IST" name="preCondition" finished-at="2025-10-31T13:19:12 IST" duration-ms="8687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="SshCreation()[pri:0, instance:testCases.TC010SSHKeyCreation@75db5df9]" started-at="2025-10-31T13:19:12 IST" name="SshCreation" finished-at="2025-10-31T13:20:11 IST" duration-ms="58758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SshCreation -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC010SSHKeyCreation@75db5df9]" started-at="2025-10-31T13:20:11 IST" name="postCondition" finished-at="2025-10-31T13:20:14 IST" duration-ms="3359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC010SSHKeyCreation -->
+      <class name="testCases.TC023CreateRoles">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testCases.TC023CreateRoles@f79e]" started-at="2025-10-31T13:13:20 IST" name="setValues" finished-at="2025-10-31T13:13:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method is-config="true" signature="startTestCase()[pri:0, instance:testCases.TC023CreateRoles@f79e]" started-at="2025-10-31T13:29:06 IST" name="startTestCase" finished-at="2025-10-31T13:29:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestCase -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:testCases.TC023CreateRoles@f79e]" started-at="2025-10-31T13:29:06 IST" name="preCondition" finished-at="2025-10-31T13:29:22 IST" duration-ms="15677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="CreateRoles()[pri:0, instance:testCases.TC023CreateRoles@f79e]" started-at="2025-10-31T13:29:22 IST" name="CreateRoles" finished-at="2025-10-31T13:30:02 IST" duration-ms="40051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateRoles -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.TC023CreateRoles@f79e]" started-at="2025-10-31T13:30:02 IST" name="postCondition" finished-at="2025-10-31T13:30:10 IST" duration-ms="8676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.TC023CreateRoles -->
+    </test> <!-- QA-Testing -->
+  </suite> <!-- Suite -->
+</testng-results>
