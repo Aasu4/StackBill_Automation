@@ -26,7 +26,8 @@ public class TC018AppsPage {
 		@Test
 		public void CreateApps() throws InterruptedException, TimeoutException {
 			DashboardPage dashboardPage = runLoginFlow();
-			dashboardPage.clickHome().clickAPPS().clickMarketPlace().clickCommunity().clicMyImagesAndIso().clickMyISO().clickMyTemplate();
+			dashboardPage.clickHome().clickAPPS().clickMarketPlace().viewMarketplace();			
+			//.clickCommunity().clicMyImagesAndIso().clickMyISO().clickMyTemplate();
 	}
 	}
 

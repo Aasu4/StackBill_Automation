@@ -13,7 +13,8 @@ public class InstancePage extends SeleniumWrapper {
 
 	// List Instances
 	public InstancePage listInstances() throws InterruptedException {
-		List<WebElement> instancesList = locateElements(Locators.XPATH, "//datatable-body-row[contains(@class,'datatable-body-row datatable-row-')]//datatable-body-cell[@class='align-items-center d-flex datatable-body-cell sort-active'][1]");
+		//List<WebElement> instancesList = locateElements(Locators.XPATH, "//datatable-body-row[contains(@class,'datatable-body-row datatable-row-')]//datatable-body-cell[@class='align-items-center d-flex datatable-body-cell sort-active'][1]");
+		List<WebElement> instancesList = locateElements(Locators.XPATH, "//datatable-body-row[contains(@class,'datatable-body-row datatable-row-')]//span[@class='d-inline-block text-truncate text-primary sb-text-primary']");
 		//String stoppedVM = driver.findElement(By.xpath("//div[text()='Stopped']")).getText();
 		List<String> instancesNames = new ArrayList<String>();
 		for(WebElement ele: instancesList) {
@@ -25,7 +26,7 @@ public class InstancePage extends SeleniumWrapper {
 
 	// Delete Instance
 	public InstanceSummary selectInstance() {
-		click(Locators.XPATH,"//datatable-body-row[contains(@class,'datatable-body-row datatable-row-')]//datatable-body-cell[@class='align-items-center d-flex datatable-body-cell sort-active'][1]");
+		click(Locators.XPATH,"//datatable-body-row[contains(@class,'datatable-body-row datatable-row-')]//span[@class='d-inline-block text-truncate text-primary sb-text-primary']");
 		return new InstanceSummary();
 	}
 

@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC006KubernetesPage">
+      <class name="testCases.TC008VolumeSnapShot">
         <methods>
           <include name="startReport"/>
+          <include name="setValues"/>
           <include name="preCondition"/>
           <include name="postCondition"/>
+          <include name="VolumeSnapshotPage"/>
           <include name="endResult"/>
-          <include name="setValues"/>
           <include name="startTestCase"/>
-          <include name="kubernetes"/>
         </methods>
-      </class> <!-- testCases.TC006KubernetesPage -->
+      </class> <!-- testCases.TC008VolumeSnapShot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

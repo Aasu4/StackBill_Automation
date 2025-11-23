@@ -20,7 +20,7 @@ public class AllOsImages extends SeleniumWrapper {
 		// Option-1
 
 		// Option-2
-		String osList = ConfigReader.getProperty("osImages").split(",")[1].trim();
+		String osList = ConfigReader.getProperty("osImages").split(",")[0].trim();
 		String osName = osList;
 
 		// Click the "All" filter button

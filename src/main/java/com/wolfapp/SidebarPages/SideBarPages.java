@@ -28,6 +28,7 @@ public class SideBarPages extends SeleniumWrapper {
 	public  FeaturedPage clickAPPS() {
 		click(Locators.XPATH,"//div[normalize-space()='Apps']");
 		System.out.println("Click to View App MarketPlace");
+		reportStep("View APPS Page", "pass");
 		return new FeaturedPage();
 	}
 

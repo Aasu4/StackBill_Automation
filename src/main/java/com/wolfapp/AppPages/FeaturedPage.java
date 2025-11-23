@@ -1,9 +1,11 @@
 package com.wolfapp.AppPages;
 
 import com.framework.base.Locators;
+import com.framework.base.SeleniumWrapper;
+import com.wolfapp.OSimages.MarketPlaceImages;
 import com.wolfapp.base.ProjectSpecificMethods;
 
-public class FeaturedPage extends ProjectSpecificMethods {
+public class FeaturedPage extends SeleniumWrapper {
 
 	public FeaturedPage clickFeatured() {
 		click(Locators.XPATH, "//div//ul[@id='marketplace-menus']//a[normalize-space()='Featured']");
@@ -11,11 +13,13 @@ public class FeaturedPage extends ProjectSpecificMethods {
 		return this;
 	}
 
-	public FeaturedPage clickMarketPlace() {
+	public MarketPlaceImages clickMarketPlace() {
 		click(Locators.XPATH, "//div//ul[@id='marketplace-menus']//a[normalize-space()='Marketplace']");
 		System.out.println("Click to View Featured List");
-		return this;
+		reportStep("Click to MarketPlace Page", "pass");
+		return new MarketPlaceImages();
 	}
+
 
 	public FeaturedPage clickCommunity() {
 		click(Locators.XPATH, "//div//ul[@id='marketplace-menus']//a[normalize-space()='Community']");

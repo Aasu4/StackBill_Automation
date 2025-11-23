@@ -26,7 +26,7 @@ public class AllOfferings extends SeleniumWrapper {
 	public ChooseNetworks allWithPayAsGo() throws InterruptedException {
 
 		// Retrieve the "payAsYouGoPlan" property as a comma-separated list of plans
-		String payAsyouGoPlan = ConfigReader.getProperty("payAsyouGoPlan").split(",")[1].trim(); // Assuming this is
+		String payAsyouGoPlan = ConfigReader.getProperty("payAsyouGoPlan").split(",")[0].trim(); // Assuming this is
 		// like
 		// "BundlePlan01,sfs-compute-offering,BundlePlan03,..."
 		String payPlans = payAsyouGoPlan;

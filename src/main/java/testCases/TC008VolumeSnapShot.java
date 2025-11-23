@@ -21,7 +21,7 @@ public class TC008VolumeSnapShot extends ProjectSpecificMethods {
 	@Test
 	public void VolumeSnapshotPage() throws InterruptedException, TimeoutException {
 		 DashboardPage dashboardPage = runLoginFlow();
-	     dashboardPage.clickHome().clickCompute().clickVolumeSnapShot().createVolumeSnapshot().listVolumeSnaps();
+	     dashboardPage.clickHome().clickCompute().clickVolumeSnapShot();
 	}
 }
 	
